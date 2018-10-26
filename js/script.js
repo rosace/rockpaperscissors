@@ -14,7 +14,7 @@ function getRandomInt(max) {
 function getComputerChoice() {
    var randomNo = getRandomInt(3)
    var computerChoice;  
-   
+  
    if (randomNo == 0) {
     computerChoice = "Rock"
     } else if (randomNo == 1) {
@@ -33,9 +33,17 @@ var userChoiceInput = document.getElementById("input")
 
 $("#shoot").click(function() {
     var computerChoice = getComputerChoice()
-    userChoiceDisplay.textContent = userChoiceInput.value
+    var userChoice = userChoiceInput.value
+    userChoiceDisplay.textContent = userChoice
     computerChoiceDisplay.textContent = computerChoice
 })
+
+// return 0 if user wins, return 1 if computer wins
+function whoWon(userChoice, computerChoice) {
+    if (userChoice == "Rock") {
+        
+    }
+}
 
 
 // DOCUMENT READY FUNCTION BELOW
